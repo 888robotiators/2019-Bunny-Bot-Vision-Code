@@ -1,0 +1,34 @@
+=================  Folders  ==================
+==============================================
+
+
+calibrating pics: Collection of pictures used to calibrate the cameras. You shouldn't need to access these
+
+C Programs: Programs converted to C using cython. Most likely unneccesary to access.
+
+Executables: Files converted to executables. Need to first be converted to C, then into executables. Most likely outdated.
+
+Graveyard On Fire: [REDACTED]
+
+npz Files: These are calibration files attributed to cameras 1-6. To use, the program will need to be redirected to pull from that file.
+
+=================  Programs  ==================
+===============================================
+
+capture.py: Used to write what is being viewed through the camera directly to file.
+
+display.py: Direct feed of camera
+
+displayPic.py: shows image. Used when you want to overlay lines or dots onto image.
+
+finalCalibrate.py: Used to calibrate a camera to compensate for radial distortion. Uses several pictures of a checkerboard. Saves the results to an npz file.
+
+transformVideoClean.py: finds a line on the ground, and sends coordinates and angle through a udp packet to roborio.
+
+undistortedTracking.py: finds a line on the ground, and presents it on the screen.
+
+RRHSV.py: used to find hsv values that the camera detects off a retroreflective tape.
+
+PoseEstimation.py: finds a pair of lines on a wall, and displays the distance.
+
+PoseEstimationSend.py: finds a pair of lines on a wall, and sends distance and angle through a udp packet to roborio.

@@ -1,0 +1,11 @@
+In Command Prompt:
+
+cython --embed -o fileName.c fileName.py
+
+the code will be transferred from fileName.py to fileName.c (the name doesn't need to be the same)
+
+then do:
+
+gcc -I /usr/include/python2.7 -o exeName fileName.c -lpython2.7
+
+exeName is your final executable
